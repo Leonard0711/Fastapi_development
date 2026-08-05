@@ -36,7 +36,7 @@ class RegistersResponse(BaseModel):
     nombre: str
     edad: int
 
-app = FastAPI()
+app = FastAPI(title="CRUD con FastAPI y MySQL", version="1.0.0")
 
 # Create
 @app.post("/resgistro/", response_model=RegistersResponse)
